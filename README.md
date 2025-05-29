@@ -14,7 +14,6 @@ If the total sum is a multiple of 10, the credit card number is valid; otherwise
 Usage
 Clone this repository to your local machine.
 
-git clone https://github.com/swetamishra123/Credit-Card-Validator.git
 Compile the C++ program using a C++ compiler.
 
 g++ main.cpp -o main

@@ -1,42 +1,102 @@
-Credit Card Validator
-Overview
-This is a simple C++ program that uses the Luhn Algorithm to validate credit card numbers. The program prompts the user to input a credit card number and then determines whether it's a valid credit card number or not.
+💳 Credit Card Validator (C++)
 
-Luhn Algorithm
-The Luhn Algorithm, also known as the "modulus 10" or "mod 10" algorithm, is a simple checksum formula used to validate a variety of identification numbers, especially credit card numbers.
+This is a simple command-line program written in C++ that uses the Luhn Algorithm to validate credit card numbers. The user is prompted to enter a credit card number, and the program determines whether it is valid or not based on the checksum logic.
 
-The algorithm works as follows:
 
-Starting from the rightmost digit (the check digit) and moving left, double the value of every second digit.
-If doubling a digit results in a two-digit number, add the digits of that number together.
-Sum all the digits, including the ones that were not doubled.
-If the total sum is a multiple of 10, the credit card number is valid; otherwise, it's invalid.
-Usage
-Clone this repository to your local machine.
+---
 
-Compile the C++ program using a C++ compiler.
+📌 Overview
+
+The Luhn Algorithm (also known as "modulus 10" or "mod 10") is a checksum formula used to validate identification numbers such as credit card numbers.
+
+This project is designed for educational purposes and provides a basic demonstration of how the Luhn Algorithm works.
+
+
+---
+
+🧮 How the Luhn Algorithm Works
+
+1. Starting from the rightmost digit (the check digit), move left and double every second digit.
+
+
+2. If doubling a digit results in a two-digit number, add the digits of that number together.
+
+
+3. Sum all the digits — both the modified and unmodified ones.
+
+
+4. If the total sum is divisible by 10, the credit card number is valid.
+
+
+
+
+---
+
+🚀 Getting Started
+
+🔧 Prerequisites
+
+C++ compiler (e.g., g++)
+
+Terminal or command-line interface
+
+
+📥 Clone the Repository
+
+git clone https://github.com/tanisha259/credit-card-validator.git
+cd credit-card-validator
+
+⚙️ Compile the Program
 
 g++ main.cpp -o main
-Run the program:
+
+▶️ Run the Program
 
 ./main
-Follow the on-screen instructions to enter credit card numbers for validation. You can exit the program by typing 'exit'.
 
-Example Output
+
+---
+
+📝 Usage
+
+Once the program starts, you will see:
+
 This program uses the Luhn Algorithm to validate a CC number.
 You can enter 'exit' anytime to quit.
+Please enter a CC number to validate:
+
+Enter a credit card number to validate. Type exit to quit the program.
+
+
+---
+
+💡 Example Output
+
 Please enter a CC number to validate: 4263982640269299
 Valid!
+
 Please enter a CC number to validate: 4983948596068655
 Invalid!
-Please enter a CC number to validate: 8957859403857785
-Invalid!
+
 Please enter a CC number to validate: 2223000048410010
 Valid!
+
 Please enter a CC number to validate: exit
-Program Explanation
-The program starts by prompting the user to enter a credit card number. You can exit by typing 'exit'.
-It checks if the input is a valid number (only digits), and if not, it asks for input again.
-It then applies the Luhn Algorithm to validate the credit card number.
-The result is displayed as "Valid!" if the credit card is valid and "Invalid!" if it's not.
-This program demonstrates a simple implementation of the Luhn Algorithm for credit card validation in C++.
+
+
+---
+
+📖 Program Explanation
+
+The program prompts the user for input.
+
+Input is validated to ensure it contains only numeric digits.
+
+The Luhn Algorithm is applied to determine validity.
+
+The result is displayed as:
+
+Valid! if the number passes the Luhn check.
+
+Invalid! if it does not.
+
